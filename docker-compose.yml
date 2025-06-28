@@ -18,7 +18,7 @@ services:
       - ./titanic_passengers.csv:/var/lib/mysql-files/titanic.csv
 
   api-service:
-    build: ./api-service
+    build: .
     ports:
       - "5000:5000"
     depends_on:
